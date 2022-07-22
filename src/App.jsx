@@ -1,7 +1,12 @@
+import Navbar from "./components/Navbar";
 import "./styles/App.css";
 
 function App() {
-	return <h1 className='text-5xl'>hola mundo</h1>;
+	return (
+		<h1 className='container mx-auto'>
+			<Navbar />
+		</h1>
+	);
 }
 
 export default App;
