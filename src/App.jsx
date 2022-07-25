@@ -1,14 +1,27 @@
+import { useState } from 'react';
+
 import Homepage from './pages/Homepage';
 import Navbar from './components/Navbar';
+import Modal from './components/Modal';
+import Menu from './components/Menu';
+
 import './styles/App.css';
 
 function App() {
+	const [modal, setModal] = useState(false);
+
 	return (
 		<div className='container static mx-auto py-4 px-20'>
 			<div className='fixed top-4 right-8'>
-				<Navbar />
+				<Navbar setModal={setModal} />
 			</div>
 			<Homepage />
+
+			{modal && (
+				<Modal setModal={setModal}>
+					<Menu />
+				</Modal>
+			)}
 		</div>
 	);
 }

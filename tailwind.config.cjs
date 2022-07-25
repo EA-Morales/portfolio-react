@@ -8,6 +8,8 @@ module.exports = {
 				primaryaccent: '#ff4747',
 				secondary: '#696969',
 				secondaryaccent: '#b3b3b3',
+				menuprimary: '#ff868c',
+				menuactive: '#ca323e',
 			},
 			fontFamily: {
 				sans: ['Karla', 'sans-serif'],
