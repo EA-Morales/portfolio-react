@@ -1,9 +1,16 @@
 import { createPortal } from 'react-dom';
+import { useEffect } from 'react';
 
 import Close from '../assets/icons/Close';
 import ChevronUp from '../assets/icons/ChevronUp';
 
 const Modal = ({ children, setModal }) => {
+	useEffect(() => {
+		document.body.classList.add('overflow-y-hidden');
+
+		return () => document.body.classList.remove('overflow-y-hidden');
+	}, []);
+
 	return createPortal(
 		<div className='bg-menuprimary fixed inset-0 z-10 flex items-center justify-center'>
 			<div

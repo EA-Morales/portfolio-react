@@ -9,7 +9,7 @@ import {
 
 const MyToolkit = () => {
 	return (
-		<div className='h-[75vh]'>
+		<div className='min-h-[55vh]'>
 			<h2 className='text-primary shadow-primary drop-shadow-3xl mb-10 text-3xl font-bold'>
 				My Toolkit 💻
 			</h2>

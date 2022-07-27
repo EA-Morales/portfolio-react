@@ -10,6 +10,8 @@ module.exports = {
 				secondaryaccent: '#b3b3b3',
 				menuprimary: '#ff868c',
 				menuactive: '#ca323e',
+				contactbackground: '#fff7f7',
+				ringprimary: '#ffd5d5',
 			},
 			fontFamily: {
 				sans: ['Karla', 'sans-serif'],
