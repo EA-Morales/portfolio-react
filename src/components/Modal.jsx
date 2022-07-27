@@ -5,7 +5,7 @@ import ChevronUp from '../assets/icons/ChevronUp';
 
 const Modal = ({ children, setModal }) => {
 	return createPortal(
-		<div className='bg-menuprimary fixed inset-0 flex items-center justify-center'>
+		<div className='bg-menuprimary fixed inset-0 z-10 flex items-center justify-center'>
 			<div
 				className='group absolute top-4 right-8'
 				onClick={() => setModal(false)}>

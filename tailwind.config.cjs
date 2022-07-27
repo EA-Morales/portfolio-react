@@ -18,6 +18,9 @@ module.exports = {
 			dropShadow: {
 				'3xl': '0px 10px 10px rgba(233, 98, 105, 0.35)',
 			},
+			aspectRatio: {
+				aspect2x1: [2, 1],
+			},
 		},
 	},
 	plugins: [require('prettier-plugin-tailwindcss')],
