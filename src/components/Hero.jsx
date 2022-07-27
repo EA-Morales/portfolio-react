@@ -7,7 +7,7 @@ const Hero = () => {
 			<div className='grid-col-1 grid content-center items-center md:grid-cols-6'>
 				<div className='mb-1 pr-8 text-left md:col-span-4 md:mb-0'>
 					<h1 className='text-primary shadow-primary drop-shadow-3xl mb-8 text-3xl font-bold md:text-5xl'>
-						Hello im agustin 👋🏻
+						Hello i&apos;m agustin 👋🏻
 					</h1>
 					<p className='text-secondary text-lg leading-8 md:text-xl'>
 						A multidisciplinary{' '}
