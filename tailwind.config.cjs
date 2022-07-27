@@ -12,6 +12,7 @@ module.exports = {
 				menuactive: '#ca323e',
 				contactbackground: '#fff7f7',
 				ringprimary: '#ffd5d5',
+				footerbackground: '#ff9090',
 			},
 			fontFamily: {
 				sans: ['Karla', 'sans-serif'],

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Modal from './components/Modal';
 import Menu from './components/Menu';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 import './styles/App.css';
 
@@ -26,6 +27,7 @@ function App() {
 				)}
 			</div>
 			<Contact />
+			<Footer />
 		</>
 	);
 }
