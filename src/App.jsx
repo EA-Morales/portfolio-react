@@ -11,7 +11,7 @@ function App() {
 	const [modal, setModal] = useState(false);
 
 	return (
-		<div className='container static mx-auto p-4 lg:px-20'>
+		<div className='container mx-auto p-4 lg:px-20'>
 			<div className='fixed top-4 right-8 z-[2]'>
 				<Navbar setModal={setModal} />
 			</div>
