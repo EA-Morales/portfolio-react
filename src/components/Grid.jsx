@@ -1,51 +1,66 @@
 import ProjectComponent from '../components/ProjectComponent';
-import mockup from '../assets/images/prueba-mockup.png';
+import prueba from '../assets/images/prueba.jpg';
+import cardSummary from '../assets/images/card-summary-mockup.jpg';
+import moviesPoster from '../assets/images/movies-poster-mockup.jpg';
+import portfolioImage from '../assets/images/portfolio-react-mockup.jpg';
 
 const Grid = () => {
 	const projects = [
 		{
 			id: 1,
-			image: mockup,
-			title: 'Habit Tracker',
+			image: prueba,
+			title: 'Portfolio Argentina Programa',
 			description:
-				'A simple React habit tracker that uses firebase database to keep track of your daily habits.',
-			technologies: ['javascript', 'react', 'html', 'css'],
+				'A simple portolio for bootcamp Argentina Programa, made with Angular, database in mysql and springboot as a backend with login and oauth2.',
+			technologies: ['html', 'tailwind', 'angular', 'springboot', 'mysql'],
 			links: [
-				{ url: '#', name: 'Live' },
-				{ url: '#', name: 'Github' },
+				{ url: 'https://portfolio-argentina-programa.web.app', name: 'Live' },
+				{ url: 'https://github.com/EA-Morales/Portfolio', name: 'Github' },
 			],
 		},
 		{
 			id: 2,
-			title: 'Into The Void',
+			image: cardSummary,
+			title: 'Order Summary Component',
 			description:
-				'A javascript mini-game application where you are dodging asteroids with your rocket!',
-			technologies: ['javascript', 'react', 'html', 'css'],
+				'Frontend Mentor challenge, made with html and scss, a simple component to show the order summary.',
+			technologies: ['Html', 'Sass'],
 			links: [
-				{ url: '#', name: 'Live' },
-				{ url: '#', name: 'Github' },
+				{
+					url: 'https://ea-morales.github.io/order-summary-component-main',
+					name: 'Live',
+				},
+				{
+					url: 'https://github.com/EA-Morales/order-summary-component-main',
+					name: 'Github',
+				},
 			],
 		},
 		{
 			id: 3,
-			title: 'Beeline',
+			image: moviesPoster,
+			title: 'Movies Poster',
 			description:
-				'A web app that uses APIs and datasets to find the nearest bike-share station to you and how many bikes/docks are available.',
-			technologies: ['javascript', 'react', 'html', 'css'],
+				'This challenge was made for Codo a Codo bootcamp, is a simple page with a list of movies and a search bar to search for a movie.',
+			technologies: ['html', 'tailwindcss', 'react', 'Api'],
 			links: [
 				{ url: '#', name: 'Live' },
-				{ url: '#', name: 'Github' },
+				{ url: 'https://github.com/EA-Morales/movies-posters', name: 'Github' },
 			],
 		},
 		{
 			id: 4,
-			title: 'Versus',
+			image: portfolioImage,
+			title: 'Portfolio React',
 			description:
-				'A React app that allows users to create anonymous polls. Users can vote and keep track of their polls.',
+				'A portfolio made with react, react-router-dom, tailwindcss and styled-components.',
 			technologies: ['javascript', 'react', 'html', 'css'],
 			links: [
 				{ url: '#', name: 'Live' },
-				{ url: '#', name: 'Github' },
+				{
+					url: 'https://github.com/EA-Morales/portfolio-react',
+					name: 'Github',
+				},
 			],
 		},
 	];

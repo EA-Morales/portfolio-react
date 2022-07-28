@@ -59,7 +59,9 @@ const Contact = () => {
 						placeholder='message'
 						rows='10'
 					/>
-					<button className='bg-primary hover:text-primary hover:border-ringprimary w-fit rounded-lg border-0 py-2 px-4 text-white hover:border-2 hover:bg-white'>
+					<button
+						disabled
+						className='bg-primary hover:text-primary hover:border-ringprimary w-fit rounded-lg border-0 py-2 px-4 text-white hover:border-2 hover:bg-white'>
 						SEND MESSAGE
 					</button>
 				</div>

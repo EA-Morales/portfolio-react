@@ -19,14 +19,14 @@ const ProjectComponent = ({
 
 	return (
 		<div
-			className='z-0 flex h-96 items-center justify-center overflow-hidden rounded-xl bg-red-300 bg-cover bg-center bg-no-repeat lg:first:col-span-2 lg:last:col-span-2'
+			className='z-0 flex h-96 items-center justify-center overflow-hidden rounded-xl bg-red-300 bg-cover bg-center bg-no-repeat shadow-md lg:first:col-span-2 lg:last:col-span-2'
 			style={{ backgroundImage: `url(${image})` }}
 			onClick={() => handleClick()}>
 			{show && (
-				<div className='relative z-[2] flex h-full w-full items-center justify-center bg-black/60 '>
+				<div className='relative z-[2] flex h-full w-full items-center justify-center bg-black/80 '>
 					<p className='absolute top-2 right-5 text-3xl text-white'>x</p>
-					<div className='flex w-3/4 flex-col items-center space-y-2'>
-						<h2 className='text-center text-3xl font-bold text-white'>
+					<div className='flex w-3/4 flex-col items-center space-y-6'>
+						<h2 className='text-primary text-center text-3xl font-bold'>
 							{title}
 						</h2>
 						<p className='text-center text-white'>{description}</p>
