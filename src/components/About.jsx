@@ -23,7 +23,7 @@ const About = () => {
 			<div className='flex items-center justify-center p-6'>
 				<img
 					alt='image portrait'
-					className='max-h-64 rounded-xl md:max-h-96'
+					className='shadow-footerbackground/30 max-h-64 rounded-md shadow-xl md:max-h-72'
 					src={portrait}
 				/>
 			</div>
