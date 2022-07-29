@@ -25,7 +25,7 @@ function App() {
 
 				{modal && (
 					<Modal setModal={setModal}>
-						<Menu />
+						<Menu setModal={setModal} />
 					</Modal>
 				)}
 			</div>

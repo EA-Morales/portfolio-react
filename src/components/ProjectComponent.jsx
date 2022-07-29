@@ -25,20 +25,20 @@ const ProjectComponent = ({
 			{show && (
 				<div className='relative z-[2] flex h-full w-full items-center justify-center bg-black/80 '>
 					<p className='absolute top-2 right-5 text-3xl text-white'>x</p>
-					<div className='flex w-3/4 flex-col items-center space-y-6'>
+					<div className='flex w-3/4 flex-col items-center  space-y-2 md:space-y-6'>
 						<h2 className='text-primary text-center text-3xl font-bold'>
 							{title}
 						</h2>
 						<p className='text-center text-white'>{description}</p>
 						<div className='flex flex-wrap items-center justify-center gap-2'>
 							{technologies.map((technologie) => (
-								<Badge key={id} technologie={technologie} />
+								<Badge key={technologie} technologie={technologie} />
 							))}
 						</div>
 						<div className='flex gap-4'>
 							{' '}
 							{links.map((link) => (
-								<Button key={id} name={link.name} url={link.url} />
+								<Button key={link.url} name={link.name} url={link.url} />
 							))}{' '}
 						</div>
 					</div>

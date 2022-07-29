@@ -2,7 +2,9 @@ import portrait from '../assets/images/portrait.jpg';
 
 const About = () => {
 	return (
-		<div className='mt-20 grid min-h-[75vh] grid-cols-1 items-center md:grid-cols-3'>
+		<div
+			className='mt-20 grid min-h-[75vh] grid-cols-1 items-center md:grid-cols-3'
+			id='about'>
 			<div className='text-secondary space-y-8 pr-4 text-left text-lg leading-7 md:col-span-2'>
 				<h2 className='text-primary shadow-primary drop-shadow-3xl text-3xl font-bold'>
 					About Me 🌸

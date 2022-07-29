@@ -4,7 +4,7 @@ import { SiDiscord } from 'react-icons/si';
 
 const Contact = () => {
 	return (
-		<div className='bg-contactbackground min-h-[95vh]'>
+		<div className='bg-contactbackground min-h-[95vh]' id='contact'>
 			<div className='container my-8 mx-auto grid grid-cols-1 px-8 pt-24 md:grid-cols-3 lg:px-20'>
 				<div className='space-y-10'>
 					<h2 className='text-primary shadow-primary drop-shadow-3xl  text-3xl font-bold'>
