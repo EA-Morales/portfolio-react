@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 import Homepage from './pages/Homepage';
 import Navbar from './components/Navbar';
@@ -18,7 +19,9 @@ function App() {
 				<div className='fixed top-4 right-8 z-[2]'>
 					<Navbar setModal={setModal} />
 				</div>
-				<Homepage />
+				<Routes>
+					<Route element={<Homepage />} path='/' />
+				</Routes>
 
 				{modal && (
 					<Modal setModal={setModal}>
