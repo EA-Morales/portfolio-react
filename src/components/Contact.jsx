@@ -3,14 +3,31 @@ import { HiMail } from 'react-icons/hi';
 import { SiDiscord } from 'react-icons/si';
 
 import Button from './Button';
-import Prueba from './Prueba';
+import AnchorWithLink from './AnchorWithLink';
 
 const Contact = () => {
-	const Links = {
-		icono: <FaLinkedinIn />,
-		url: 'mailto:eduardo.agustin.morales@gmail.com',
-		style: 'text-primary hover:text-primaryaccent text-2xl',
-	};
+	const Links = [
+		{
+			icono: <FaLinkedinIn />,
+			url: 'https://www.linkedin.com/in/eduardo-agustin-morales/',
+			style: 'text-primary hover:text-primaryaccent text-2xl',
+		},
+		{
+			icono: <FaGithub />,
+			url: 'https://github.com/EA-Morales',
+			style: 'text-primary hover:text-primaryaccent text-2xl',
+		},
+		{
+			icono: <SiDiscord />,
+			url: 'https://discordapp.com/users/L3GOL4S#1616',
+			style: 'text-primary hover:text-primaryaccent text-2xl',
+		},
+		{
+			icono: <HiMail />,
+			url: 'mailto:eduardo.agustin.morales@gmail.com',
+			style: 'text-primary hover:text-primaryaccent text-2xl',
+		},
+	];
 
 	return (
 		<div className='bg-contactbackground min-h-[95vh]' id='contact'>
@@ -25,31 +42,15 @@ const Contact = () => {
 						quick chat - you can find me on social media or you can send me a
 						message here!
 					</p>
-					<div className='flex justify-center gap-8'>
-						<a
-							href='https://www.linkedin.com/in/eduardo-agustin-morales/'
-							rel='noopener noreferrer'
-							target='_blank'>
-							<FaLinkedinIn className='text-primary hover:text-primaryaccent text-2xl' />
-						</a>
-						<a
-							href='https://github.com/EA-Morales'
-							rel='noopener noreferrer'
-							target='_blank'>
-							<FaGithub className='text-primary hover:text-primaryaccent text-2xl' />
-						</a>
-						<a
-							href='https://discordapp.com/users/L3GOL4S#1616'
-							rel='noopener noreferrer'
-							target='_blank'>
-							<SiDiscord className='text-primary hover:text-primaryaccent text-2xl' />
-						</a>
-						<a href='mailto:eduardo.agustin.morales@gmail.com'>
-							<HiMail className='text-primary hover:text-primaryaccent text-2xl' />
-						</a>
-						<Prueba className={Links.style} url={Links.url}>
-							{Links.icono}
-						</Prueba>
+					<div className='flex gap-8'>
+						{Links.map((link) => (
+							<AnchorWithLink
+								key={link.url}
+								className={link.style}
+								url={link.url}>
+								{link.icono}
+							</AnchorWithLink>
+						))}
 					</div>
 				</div>
 				<div className='12 mx-auto mt-4 flex w-full flex-col space-y-4 md:col-span-2 md:mt-0 md:px-20'>

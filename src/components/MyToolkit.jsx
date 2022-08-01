@@ -8,48 +8,32 @@ import {
 } from 'react-icons/si';
 
 const MyToolkit = () => {
+	const Toolkit = [
+		{ name: 'Html 5', icono: <AiOutlineHtml5 /> },
+		{ name: 'Css', icono: <DiCss3 /> },
+		{ name: 'Sass', icono: <DiSass /> },
+		{ name: 'Tailwind css', icono: <SiTailwindcss /> },
+		{ name: 'Javascript', icono: <SiJavascript /> },
+		{ name: 'React', icono: <DiReact /> },
+		{ name: 'Figma', icono: <SiFigma /> },
+		{ name: 'Firebase', icono: <SiFirebase /> },
+		{ name: 'Github', icono: <AiOutlineGithub /> },
+	];
+
 	return (
 		<div className='min-h-[55vh]'>
 			<h2 className='text-primary shadow-primary drop-shadow-3xl mb-10 text-3xl font-bold'>
 				My Toolkit 💻
 			</h2>
 			<div className='mx-auto flex max-w-3xl flex-wrap justify-center gap-4'>
-				<div className='flex aspect-square w-28 flex-col items-center justify-center'>
-					<AiOutlineHtml5 className='text-secondary' size='3em' />
-					<p className='font-script text-lg'>Html 5</p>
-				</div>
-				<div className='flex aspect-square w-28 flex-col items-center justify-center'>
-					<DiCss3 className='text-secondary' size='3em' />
-					<p className='font-script text-lg'>Css</p>
-				</div>
-				<div className='flex aspect-square w-28 flex-col items-center justify-center'>
-					<DiSass className='text-secondary' size='3em' />
-					<p className='font-script text-lg'>Sass</p>
-				</div>
-				<div className='flex aspect-square w-28 flex-col items-center justify-center'>
-					<SiTailwindcss className='text-secondary' size='3em' />
-					<p className='font-script text-lg'>Tailwind css</p>
-				</div>
-				<div className='flex aspect-square w-28 flex-col items-center justify-center'>
-					<SiJavascript className='text-secondary rounded-xl' size='3em' />
-					<p className='font-script text-lg'>Javascript</p>
-				</div>
-				<div className='flex aspect-square w-28 flex-col items-center justify-center'>
-					<DiReact className='text-secondary rounded-xl' size='3em' />
-					<p className='font-script text-lg'>React</p>
-				</div>
-				<div className='flex aspect-square w-28 flex-col items-center justify-center'>
-					<SiFigma className='text-secondary rounded-xl' size='3em' />
-					<p className='font-script text-lg'>Figma</p>
-				</div>
-				<div className='flex aspect-square w-28 flex-col items-center justify-center'>
-					<SiFirebase className='text-secondary rounded-xl' size='3em' />
-					<p className='font-script text-lg'>Firebase</p>
-				</div>
-				<div className='flex aspect-square w-28 flex-col items-center justify-center'>
-					<AiOutlineGithub className='text-secondary rounded-xl' size='3em' />
-					<p className='font-script text-lg'>Github</p>
-				</div>
+				{Toolkit.map((tool) => (
+					<div
+						key={tool.name}
+						className='flex aspect-square w-28 flex-col items-center justify-center'>
+						<div className='text-secondary text-5xl'>{tool.icono}</div>
+						<p className='font-script text-lg'>{tool.name}</p>
+					</div>
+				))}
 			</div>
 		</div>
 	);

@@ -1,4 +1,4 @@
-const Prueba = ({ children, url, className }) => {
+const AnchorWithLink = ({ children, url, className }) => {
 	return (
 		<a
 			className={`${className}`}
@@ -10,4 +10,4 @@ const Prueba = ({ children, url, className }) => {
 	);
 };
 
-export default Prueba;
+export default AnchorWithLink;
