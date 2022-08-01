@@ -2,9 +2,16 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 import { SiDiscord } from 'react-icons/si';
 
-import ButtonTest from './ButtonTest';
+import Button from './Button';
+import Prueba from './Prueba';
 
 const Contact = () => {
+	const Links = {
+		icono: <FaLinkedinIn />,
+		url: 'mailto:eduardo.agustin.morales@gmail.com',
+		style: 'text-primary hover:text-primaryaccent text-2xl',
+	};
+
 	return (
 		<div className='bg-contactbackground min-h-[95vh]' id='contact'>
 			<div className='container my-8 mx-auto grid grid-cols-1 px-8 pt-24 md:grid-cols-3 lg:px-20'>
@@ -40,6 +47,9 @@ const Contact = () => {
 						<a href='mailto:eduardo.agustin.morales@gmail.com'>
 							<HiMail className='text-primary hover:text-primaryaccent text-2xl' />
 						</a>
+						<Prueba className={Links.style} url={Links.url}>
+							{Links.icono}
+						</Prueba>
 					</div>
 				</div>
 				<div className='12 mx-auto mt-4 flex w-full flex-col space-y-4 md:col-span-2 md:mt-0 md:px-20'>
@@ -61,11 +71,9 @@ const Contact = () => {
 						placeholder='message'
 						rows='10'
 					/>
-					<button
-						disabled
-						className='bg-primary ring-primary hover:text-primary hover:ring-ringprimary w-fit rounded-lg py-2 px-4 text-white ring-2 hover:bg-white hover:ring-2'>
+					<Button className='bg-primary ring-primary hover:text-primary hover:ring-ringprimary w-fit rounded-lg py-2 px-4 text-white ring-2 hover:bg-white hover:ring-2'>
 						SEND MESSAGE
-					</button>
+					</Button>
 				</div>
 			</div>
 		</div>

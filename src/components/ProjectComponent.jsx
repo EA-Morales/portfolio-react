@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import Badge from './Badge';
-import Button from './Button';
+import ButtonLink from './ButtonLink';
 
 const ProjectComponent = ({
 	id,
@@ -38,7 +38,11 @@ const ProjectComponent = ({
 						<div className='flex gap-4'>
 							{' '}
 							{links.map((link) => (
-								<Button key={link.url} name={link.name} url={link.url} />
+								<ButtonLink
+									key={link.url}
+									className='bg-primary hover:text-primary mt-2 w-fit rounded-lg border-0 py-1 px-4 text-white hover:bg-white'>
+									{link.name}
+								</ButtonLink>
 							))}{' '}
 						</div>
 					</div>
