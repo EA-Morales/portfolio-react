@@ -2,6 +2,8 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 import { SiDiscord } from 'react-icons/si';
 
+import ButtonTest from './ButtonTest';
+
 const Contact = () => {
 	return (
 		<div className='bg-contactbackground min-h-[95vh]' id='contact'>
@@ -61,7 +63,7 @@ const Contact = () => {
 					/>
 					<button
 						disabled
-						className='bg-primary hover:text-primary hover:border-ringprimary w-fit rounded-lg border-0 py-2 px-4 text-white hover:border-2 hover:bg-white'>
+						className='bg-primary ring-primary hover:text-primary hover:ring-ringprimary w-fit rounded-lg py-2 px-4 text-white ring-2 hover:bg-white hover:ring-2'>
 						SEND MESSAGE
 					</button>
 				</div>
