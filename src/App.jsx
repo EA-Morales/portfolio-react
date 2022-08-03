@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import Homepage from './pages/Homepage';
-import Navbar from './components/Navbar';
-import Modal from './components/Modal';
-import Menu from './components/Menu';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Homepage from '@/pages/Homepage';
+import Navbar from '@/components/Navbar';
+import Modal from '@/components/Modal';
+import Menu from '@/components/Menu';
+import Footer from '@/components/Footer';
+import Contact from '@/pages/sections/Contact';
 
 import './styles/App.css';
 

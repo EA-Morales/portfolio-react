@@ -1,8 +1,8 @@
-import ProjectComponent from '../components/ProjectComponent';
-import prueba from '../assets/images/prueba.jpg';
-import cardSummary from '../assets/images/card-summary-mockup.jpg';
-import moviesPoster from '../assets/images/movies-poster-mockup.jpg';
-import portfolioImage from '../assets/images/portfolio-react-mockup.jpg';
+import ProjectComponent from '@/components/ProjectComponent';
+import prueba from '@/assets/images/prueba.jpg';
+import cardSummary from '@/assets/images/card-summary-mockup.jpg';
+import moviesPoster from '@/assets/images/movies-poster-mockup.jpg';
+import portfolioImage from '@/assets/images/portfolio-react-mockup.jpg';
 
 const Grid = () => {
 	const projects = [

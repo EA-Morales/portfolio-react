@@ -1,8 +1,8 @@
 import { createPortal } from 'react-dom';
 import { useEffect } from 'react';
 
-import Close from '../assets/icons/Close';
-import ChevronUp from '../assets/icons/ChevronUp';
+import Close from '@/assets/icons/Close';
+import ChevronUp from '@/assets/icons/ChevronUp';
 
 const Modal = ({ children, setModal }) => {
 	useEffect(() => {

@@ -1,5 +1,5 @@
-import ChevronDown from '../assets/icons/ChevronDown';
-import Menu from '../assets/icons/Menu';
+import ChevronDown from '@/assets/icons/ChevronDown';
+import Menu from '@/assets/icons/Menu';
 
 const Navbar = ({ setModal }) => {
 	return (

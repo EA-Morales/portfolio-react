@@ -1,5 +1,5 @@
-import ChevronDown from '../assets/icons/ChevronDown';
-import avatar from '../assets/images/avatar.png';
+import ChevronDown from '@/assets/icons/ChevronDown';
+import avatar from '@/assets/images/avatar.png';
 
 const Hero = () => {
 	return (

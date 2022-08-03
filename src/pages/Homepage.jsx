@@ -1,7 +1,7 @@
-import Hero from '../components/Hero';
-import Projects from '../components/Projects';
-import About from '../components/About';
-import MyToolkit from '../components/MyToolkit';
+import Projects from '@/pages/sections/Projects';
+import MyToolkit from '@/components/MyToolkit';
+import Hero from '@/pages/sections/Hero';
+import About from '@/pages/sections/About';
 
 const Homepage = () => {
 	return (

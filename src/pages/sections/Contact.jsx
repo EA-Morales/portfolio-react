@@ -2,8 +2,8 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 import { SiDiscord } from 'react-icons/si';
 
-import AnchorWithLink from './AnchorWithLink';
-import ContactForm from './ContactForm';
+import AnchorWithLink from '@/components/AnchorWithLink';
+import ContactForm from '@/components/ContactForm';
 
 const Contact = () => {
 	const Links = [

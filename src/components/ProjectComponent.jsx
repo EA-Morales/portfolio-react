@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import AOS from 'aos';
-
 import 'aos/dist/aos.css';
-
 import { AiOutlineClose } from 'react-icons/ai';
 
-import Badge from './Badge';
-import ButtonLink from './ButtonLink';
+import Badge from '@/components/Badge';
+import ButtonLink from '@/components/ButtonLink';
 
 const ProjectComponent = ({
 	id,
