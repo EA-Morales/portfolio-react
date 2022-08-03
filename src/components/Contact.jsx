@@ -2,8 +2,8 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 import { SiDiscord } from 'react-icons/si';
 
-import Button from './Button';
 import AnchorWithLink from './AnchorWithLink';
+import ContactForm from './ContactForm';
 
 const Contact = () => {
 	const Links = [
@@ -53,29 +53,7 @@ const Contact = () => {
 						))}
 					</div>
 				</div>
-				<div className='12 mx-auto mt-4 flex w-full flex-col space-y-4 md:col-span-2 md:mt-0 md:px-20'>
-					<input
-						className='ring-ringprimary rounded-sm py-2 px-4 ring-2'
-						placeholder='name'
-						type='text'
-					/>
-					<input
-						className='ring-ringprimary rounded-sm py-2 px-4 ring-2'
-						placeholder='email'
-						type='email'
-					/>
-					<textarea
-						className='ring-ringprimary rounded-sm py-2 px-4 ring-2'
-						cols='30'
-						id=''
-						name=''
-						placeholder='message'
-						rows='10'
-					/>
-					<Button className='bg-primary ring-primary hover:text-primary hover:ring-ringprimary w-fit rounded-lg py-2 px-4 text-white ring-2 hover:bg-white hover:ring-2'>
-						SEND MESSAGE
-					</Button>
-				</div>
+				<ContactForm />
 			</div>
 		</div>
 	);
