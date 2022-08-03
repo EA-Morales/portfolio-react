@@ -17,6 +17,8 @@ const Grid = () => {
 				{ url: 'https://portfolio-argentina-programa.web.app', name: 'Live' },
 				{ url: 'https://github.com/EA-Morales/Portfolio', name: 'Github' },
 			],
+			animation: 'fade-right',
+			delay: '250',
 		},
 		{
 			id: 2,
@@ -35,6 +37,8 @@ const Grid = () => {
 					name: 'Github',
 				},
 			],
+			animation: 'fade-left',
+			delay: '500',
 		},
 		{
 			id: 3,
@@ -47,6 +51,8 @@ const Grid = () => {
 				{ url: '#', name: 'Live' },
 				{ url: 'https://github.com/EA-Morales/movies-posters', name: 'Github' },
 			],
+			animation: 'fade-left',
+			delay: '750',
 		},
 		{
 			id: 4,
@@ -62,6 +68,8 @@ const Grid = () => {
 					name: 'Github',
 				},
 			],
+			animation: 'fade-down',
+			delay: '1000',
 		},
 	];
 
@@ -70,6 +78,8 @@ const Grid = () => {
 			{projects.map((project) => (
 				<ProjectComponent
 					key={project.id}
+					animation={project.animation}
+					delay={project.delay}
 					description={project.description}
 					id={project.id}
 					image={project.image}

@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import Badge from './Badge';
 import ButtonLink from './ButtonLink';
@@ -10,6 +12,8 @@ const ProjectComponent = ({
 	description,
 	technologies,
 	links,
+	animation,
+	delay,
 }) => {
 	const [show, setShow] = useState(false);
 
@@ -17,9 +21,14 @@ const ProjectComponent = ({
 		setShow(!show);
 	};
 
+	AOS.init();
+
 	return (
 		<div
 			className='z-0 flex h-96 items-center justify-center overflow-hidden rounded-xl bg-red-300 bg-cover bg-center bg-no-repeat shadow-md lg:first:col-span-2 lg:last:col-span-2'
+			data-aos={animation}
+			data-aos-delay={delay}
+			data-aos-duration='250'
 			style={{ backgroundImage: `url(${image})` }}
 			onClick={() => handleClick()}>
 			{show && (
