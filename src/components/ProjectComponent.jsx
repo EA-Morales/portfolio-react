@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import AOS from 'aos';
+
 import 'aos/dist/aos.css';
+
+import { AiOutlineClose } from 'react-icons/ai';
 
 import Badge from './Badge';
 import ButtonLink from './ButtonLink';
@@ -33,7 +36,9 @@ const ProjectComponent = ({
 			onClick={() => handleClick()}>
 			{show && (
 				<div className='relative z-[2] flex h-full w-full items-center justify-center bg-black/80 '>
-					<p className='absolute top-2 right-5 text-3xl text-white'>x</p>
+					<p className='absolute top-2 right-5 cursor-pointer text-2xl text-white'>
+						<AiOutlineClose />
+					</p>
 					<div className='flex w-3/4 flex-col items-center  space-y-2 md:space-y-6'>
 						<h2 className='text-primary text-center text-3xl font-bold'>
 							{title}
