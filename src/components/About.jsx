@@ -10,16 +10,19 @@ const About = () => {
 					About Me 🌸
 				</h2>
 				<p className=''>
-					Hello again! Thanks for scrolling this far!! 🤗 I recently graduated
-					from Juno College of Technology (cohort 24 aka uno juno!). I also
-					graduated from York University & Sheridan College with a bachelor of
-					honors in design.
+					<span className='text-primary'>Frontend student</span>, looking for
+					the opportunity to gain experience with{' '}
+					<span className='text-primary'>
+						Javascript, React, frontend frameworks, CSS frameworks, and
+						Javascript backend frameworks.
+					</span>{' '}
+					I like to work in a team, cooperate with everyone, and helping the
+					best possible way, with great satisfaction in teaching and learning.
 				</p>
 				<p>
-					Other than coding, I spend most of my free time playing Animal
-					Crossing (add me!) or any other video games. 🤓 I&apos;ve also been
-					trying to read more so feel free to reach out to me with any book
-					recommendations!
+					I am looking for opportunities to do internships in web development,
+					which allow my intellectual growth and develop my technical knowledge,
+					to grow together with the company and my coworkers.
 				</p>
 			</div>
 			<div className='flex items-center justify-center p-6'>
