@@ -20,9 +20,9 @@ const About = () => {
 					best possible way, with great satisfaction in teaching and learning.
 				</p>
 				<p>
-					I am looking for opportunities to do internships in web development,
-					which allow my intellectual growth and develop my technical knowledge,
-					to grow together with the company and my coworkers.
+					I am looking for opportunities to work in web development, which allow
+					my intellectual growth and develop my technical knowledge, to grow
+					together with the company and my coworkers.
 				</p>
 			</div>
 			<div className='flex items-center justify-center p-6'>
