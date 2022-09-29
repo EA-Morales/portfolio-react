@@ -2,7 +2,6 @@ import { useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { AiOutlineClose } from 'react-icons/ai';
-import { SiLineageos } from 'react-icons/si';
 
 import Badge from '@/components/Badge';
 import ButtonLink from '@/components/ButtonLink';

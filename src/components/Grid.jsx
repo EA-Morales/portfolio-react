@@ -17,7 +17,7 @@ const Grid = () => {
 				{ url: 'https://portfolio-argentina-programa.web.app', name: 'Live' },
 				{ url: 'https://github.com/EA-Morales/Portfolio', name: 'Github' },
 			],
-			animation: 'fade-right',
+			animation: 'fade-down',
 			delay: '250',
 		},
 		{
@@ -37,7 +37,7 @@ const Grid = () => {
 					name: 'Github',
 				},
 			],
-			animation: 'fade-left',
+			animation: 'fade-down',
 			delay: '500',
 		},
 		{
@@ -51,7 +51,7 @@ const Grid = () => {
 				{ url: '#', name: 'Live' },
 				{ url: 'https://github.com/EA-Morales/movies-posters', name: 'Github' },
 			],
-			animation: 'fade-left',
+			animation: 'fade-down',
 			delay: '750',
 		},
 		{
