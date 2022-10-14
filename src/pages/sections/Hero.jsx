@@ -1,7 +1,35 @@
-import ChevronDown from '@/assets/icons/ChevronDown';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { HiMail } from 'react-icons/hi';
+import { SiDiscord } from 'react-icons/si';
+
 import avatar from '@/assets/images/avatar.png';
+import ChevronDown from '@/assets/icons/ChevronDown';
+import AnchorWithLink from '@/components/AnchorWithLink';
 
 const Hero = () => {
+	const Links = [
+		{
+			icono: <FaLinkedinIn />,
+			url: 'https://www.linkedin.com/in/eduardo-agustin-morales/',
+			style: 'text-primary hover:text-primaryaccent text-2xl',
+		},
+		{
+			icono: <FaGithub />,
+			url: 'https://github.com/EA-Morales',
+			style: 'text-primary hover:text-primaryaccent text-2xl',
+		},
+		{
+			icono: <SiDiscord />,
+			url: 'https://discordapp.com/users/L3GOL4S#1616',
+			style: 'text-primary hover:text-primaryaccent text-2xl',
+		},
+		{
+			icono: <HiMail />,
+			url: 'mailto:eduardo.agustin.morales@gmail.com',
+			style: 'text-primary hover:text-primaryaccent text-2xl',
+		},
+	];
+
 	return (
 		<div className='relative grid min-h-[95vh] content-center'>
 			<div className='grid-col-1 grid content-center items-center md:grid-cols-6'>
@@ -20,9 +48,16 @@ const Hero = () => {
 						✨
 					</p>
 					<br />
-					<p className='text-secondary text-lg md:text-xl'>
-						Currently working as a Freelance react developer ⚛️
-					</p>
+					<div className='flex gap-8'>
+						{Links.map((link) => (
+							<AnchorWithLink
+								key={link.url}
+								className={link.style}
+								url={link.url}>
+								{link.icono}
+							</AnchorWithLink>
+						))}
+					</div>
 				</div>
 				<div className='mx-auto md:col-span-2'>
 					<img alt='' className='w-36 md:w-56' src={avatar} />
